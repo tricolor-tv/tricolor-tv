@@ -1,0 +1,257 @@
+@font-face {
+    font-family: "Roboto condensed";
+    src: url('robotocondensed-light.woff') format('woff');
+    font-weight: light;
+    font-style: normal;
+}
+
+
+html,
+body {
+    height: 100%;
+    text-align: center;
+    font-family: "Roboto condensed";
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.tricolor {
+    background-image: linear-gradient(
+        to bottom right,
+        white,
+        white 33%,
+        #05F 33%,
+        #05F 66%,
+        #F22 66%);
+}
+
+/*body.ntv {
+
+}
+
+body.telecarta {
+
+}
+*/
+
+a {
+    color: white;
+}
+
+.wrapper {
+    margin: auto;
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+
+header {
+    height: 100px;
+
+    color: white;
+    /*background: rgba(64, 64, 64, 0.5);*/
+    
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+header.tricolor {
+    background: rgba(0, 128, 255, 0.6);
+}
+
+/*header.ntv {
+
+}
+
+header.telecarta {
+
+}*/
+
+nav {
+    height: 80px;
+}
+
+h1 {
+    height: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: normal;
+}
+
+h2 {
+    min-height: 30px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    
+    font-size: 24px;
+}
+
+h3 {
+    min-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    
+    font-size: 16px;
+}
+
+#headline {
+    position: absolute;
+    left: 20px;
+    height: 40px;
+}
+
+
+#official_dealer {
+    display: block;
+    font-size: 20px;
+}
+
+
+#tel{
+    position: absolute;
+    right: 20px;
+    top: 0;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+#tel span {
+    display: block;
+}
+
+
+main {
+    display: table-row;
+    height: 100%;
+    max-width: 640px;
+}
+
+
+.main_content {
+    display: inline-block;
+    max-width: 600px;
+    padding: 40px;
+    margin: 40px 0;
+
+    text-align: left;
+
+    background: rgba(255, 255, 255, 0.9);
+    
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.main_content a {
+    color: #05F;
+}
+
+p {
+    /*height: 20px;*/
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+
+.tariff {
+    clear: left;
+    margin-bottom: 40px;
+}
+
+.tariff>img {
+    float: left;
+    padding-right: 20px;
+}
+
+.more_info {
+    color: #05F;
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+#tv_program {
+    clear: both;
+    margin-top: 100px;
+}
+/*
+#tv_program>a {
+    color: #05F;
+}*/
+
+footer {
+    height: 60px;
+    width: 100%;
+
+    color: white;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.5);
+}
+
+footer.tricolor {
+    background: rgba(0, 128, 255, 0.6);
+}
+
+/*footer.ntv {
+}
+footer.telecarta {
+}
+*/
+
+#footer_div {
+padding-top: 20px;
+}
+
+#year {
+    float: left;
+    padding-left: 20px;
+}
+
+#made_in {
+    float: right;
+    padding-right: 20px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media screen and (max-width: 639px) {
+    .main_content {
+        padding: 40px 0;
+    }
+}
+
+@media screen and (max-width: 959px) {
+    header {
+        height: 180px;
+    }
+    
+    #tel {
+        position: static;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    footer {
+        height: 80px;
+    }
+    
+    #year {
+        float: none;
+    }
+    
+    #made_in {
+        float: none;
+    }
+}
+
+@media screen and (max-width: 419px) {
+    header {
+        height: 200px;
+    }
+    nav {
+        height: 120px
+    }
+}
