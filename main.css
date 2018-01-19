@@ -185,8 +185,12 @@ h2 {
     margin-top: 60px;
 }
 
-#equipment ~ h3:first-of-type {
+#equipment ~ h3.first {
     margin-top: 20px;
+}
+
+#action ~ h3 {
+    margin-top: 40px;
 }
 
 footer {
