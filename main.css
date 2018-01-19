@@ -193,6 +193,14 @@ h2 {
     margin-top: 40px;
 }
 
+.price {
+    color: #F22;
+    font-size: 20px;
+    font-weight: 700;
+    float: right;
+}
+
+
 footer {
     height: 60px;
     width: 100%;
