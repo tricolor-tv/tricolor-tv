@@ -193,12 +193,18 @@ h2 {
     margin-top: 40px;
 }
 
+#action ~ img {
+    display: block;
+    margin-bottom: 20px;
+}
+
 .price {
     color: #F22;
     font-size: 20px;
     font-weight: 700;
     float: right;
 }
+
 
 
 footer {
