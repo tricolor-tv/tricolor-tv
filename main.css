@@ -210,6 +210,10 @@ h2 {
     margin-bottom: 60px;
 }
 
+#addresses ~ img:last-of-type {
+    margin-bottom: 0;
+}
+
 footer {
     height: 60px;
     width: 100%;
