@@ -181,6 +181,14 @@ h2 {
     color: #05F;
 }*/
 
+#equipment ~ h3 {
+    margin-top: 60px;
+}
+
+#equipment ~ h3:first-of-type {
+    margin-top: 20px;
+}
+
 footer {
     height: 60px;
     width: 100%;
