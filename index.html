@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html itemscope itemtype="http://schema.org/CableOrSatelliteService">
 
 <head>
 	<meta charset="utf-8">
@@ -10,21 +10,22 @@
     <title>Спутниковое телевидение</title>
 </head>
 
-<body class="tricolor">
+<body class="tricolor" itemprop="broker" itemscope itemtype="http://schema.org/LocalBusiness">
 
 	<div class="wrapper">
 		<header class="tricolor">
             <nav>
                 <h1>
-                    <a>Триколор ТВ</a>,
+                    <a itemprop="brand">Триколор ТВ</a>,
                     <a href="">НТВ+</a>,
                     <a href="">Телекарта</a>
-                    <span id="official_dealer">Официальный дилер</span>
+                    <span id="official_dealer" itemprop="description">Официальный дилер</span>
                 </h1>
             </nav>
             <div id="tel">
-                <span>+7&nbsp;951&nbsp;503&#8210;33&#8210;11</span>
-                <span>69&#8210;22&#8210;17</span>
+                <span itemprop="telephone">+7&nbsp;951&nbsp;503&#8210;33&#8210;11</span>
+                <span itemprop="telephone">69&#8210;22&#8210;17</span>
+                <!--<span id="email"></span>-->
             </div>
 		</header>
   		<main>
@@ -203,17 +204,20 @@
                 <a target="_blank" href="https://www.tricolor.tv/channelpackages/services/sputnikovyy-internet/">Подробнее</a>
                 
                 <h2 id="addresses">Адреса:</h2>
-                <p>Пархоменко 7-20 , "Салон-Магазин Триколор ТВ"</p>
-                <p>Вторник-воскресенье с 10 до 18.30</p>
-                <img src="img/shops/salon.jpg">
+                <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">Таганрог</span>, <span itemprop="streetAddress">Пархоменко 7-20</span>, "Салон-Магазин Триколор ТВ"</p>
+                <p itemprop="openingHours" datetime="Tu-Su 10:00-18:30">Вторник-воскресенье с 10 до 18.30</p>
+                <img itemprop="image" src="img/shops/salon.jpg">
+                <!--<div itemprop="hasMap"></div>-->
                 
-                <p>Гоголевский 29а , Центральный рынок , магазин "Антенный мир"</p>
-                <p>Вторник-воскресенье с 8 до 15</p>
-                <img src="img/shops/antenniy_mir_rinok.jpg">
+                <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">Таганрог</span>, <span itemprop="streetAddress">Гоголевский 29а</span>, Центральный рынок, магазин "Антенный мир"</p>
+                <p itemprop="openingHours" datetime="Tu-Su 8:00-15:00">Вторник-воскресенье с 8 до 15</p>
+                <img itemprop="image" src="img/shops/antenniy_mir_rinok.jpg">
+                <!--<div itemprop="hasMap"></div>-->
                 
-                <p>Пархоменко 7-19 , магазин "Антенный мир"</p>
-                <p>Вторник-воскресенье с 10 до 18.30</p>
-                <img src="img/shops/antenniy_mir.jpg">
+                <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">Таганрог</span>, <span itemprop="streetAddress">Пархоменко 7-19</span>, магазин "Антенный мир"</p>
+                <p itemprop="openingHours" datetime="Tu-Su 10:00-18:30">Вторник-воскресенье с 10 до 18.30</p>
+                <img itemprop="image" src="img/shops/antenniy_mir.jpg">
+                <!--<div itemprop="hasMap"></div>-->
 
   			</div>
   		</main>
