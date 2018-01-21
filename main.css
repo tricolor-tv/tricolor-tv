@@ -48,7 +48,7 @@ a {
 
 
 header {
-    height: 100px;
+    min-height: 140px;
 
     color: white;
     /*background: rgba(64, 64, 64, 0.5);*/
@@ -110,7 +110,7 @@ h3 {
 }
 
 
-#tel{
+#contacts {
     position: absolute;
     right: 20px;
     top: 0;
@@ -118,7 +118,7 @@ h3 {
     line-height: 40px;
 }
 
-#tel span {
+#contacts span {
     display: block;
 }
 
@@ -257,11 +257,11 @@ padding-top: 20px;
 }
 
 @media screen and (max-width: 959px) {
-    header {
+    /*header {
         height: 180px;
-    }
+    }*/
     
-    #tel {
+    #contacts {
         position: static;
     }
 }
@@ -281,9 +281,9 @@ padding-top: 20px;
 }
 
 @media screen and (max-width: 419px) {
-    header {
+    /*header {
         height: 200px;
-    }
+    }*/
     nav {
         height: 120px
     }
