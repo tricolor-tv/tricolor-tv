@@ -74,11 +74,11 @@ header.telecarta {
 }*/
 
 nav {
-    height: 80px;
+    min-height: 80px;
 }
 
 h1 {
-    height: 40px;
+    min-height: 40px;
     margin-top: 0;
     margin-bottom: 0;
     font-size: 30px;
