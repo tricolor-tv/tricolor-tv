@@ -65,10 +65,11 @@ header.tricolor {
     background: rgba(0, 128, 255, 0.6);
 }
 
-/*header.ntv {
+header.ntv {
 
 }
 
+/*
 header.telecarta {
 
 }*/
@@ -177,10 +178,6 @@ h2 {
     clear: both;
     margin-top: 100px;
 }
-/*
-#tv_program>a {
-    color: #05F;
-}*/
 
 #equipment ~ h3 {
     margin-top: 60px;
@@ -188,6 +185,16 @@ h2 {
 
 #equipment ~ h3.first {
     margin-top: 20px;
+}
+
+#ntv_equipment ~ ul{
+    float: left;
+    color: red;
+}
+
+.ntv_equipment_details {
+    clear: both;
+    color: red !important;
 }
 
 #action ~ h3 {
