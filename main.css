@@ -230,19 +230,13 @@ h2 {
     margin-bottom: 40px;
 }
 
+#telekarta_equipment {
+    margin-top: 20px;
+}
+
 #telekarta_receivers div:first-of-type {
     float: right;
 }
-
-/*
-#telekarta_receivers div {
-    float: right;
-}
-
-#telekarta_receivers > img {
-    clear: both;
-}
-*/
 
 #telekarta_receivers img {
     margin-top: 20px;
@@ -265,8 +259,23 @@ h2 {
     color: #EC0677;
 }
 
+#telekarta_additional span {
+    display: inline-block;
+    width: 35%;
+}
 
+#telekarta_additional p span:first-child {
+    display: inline-block;
+    width: 22%;
+}
 
+#telekarta_additional p:nth-child(2n) {
+    background: rgb(0, 0, 0, 0.1);
+}
+
+.telekarta_headers {
+    font-weight: bold;
+}
 
 #channels span {
     font-weight: bold;
