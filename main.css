@@ -230,6 +230,44 @@ h2 {
     margin-bottom: 40px;
 }
 
+#telekarta_receivers div:first-of-type {
+    float: right;
+}
+
+/*
+#telekarta_receivers div {
+    float: right;
+}
+
+#telekarta_receivers > img {
+    clear: both;
+}
+*/
+
+#telekarta_receivers img {
+    margin-top: 20px;
+}
+
+#telekarta_receivers h3 {
+    margin-top: 40px;
+}
+
+.telekarta_chars {
+    float: right;
+}
+
+.telekarta_equipment_details {
+    clear: both;
+}
+
+.telekarta_price {
+    font-weight: bold;
+    color: #EC0677;
+}
+
+
+
+
 #channels span {
     font-weight: bold;
 }
@@ -328,6 +366,11 @@ padding-top: 20px;
 
 @media screen and (max-width: 719px) {
     .ntv_chars {
+        float: none;
+        display: block;
+    }
+    
+    .telekarta_chars {
         float: none;
         display: block;
     }
