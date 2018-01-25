@@ -35,14 +35,6 @@ body.tricolor {
 
 
 body.ntv {
-    /*background-image: radial-gradient(circle at center, #39A82A 0, #39A82A 45%, white 46%)*/
-    /*background-image: linear-gradient(
-        to bottom right,
-        white,
-        white 50%,
-        #39A82A 50%,
-        #39A82A 100%);*/
-        
         background-image: linear-gradient(
         to bottom right,
         white,
@@ -52,11 +44,27 @@ body.ntv {
         white 66%);
 }
 
-/*#39A82A
-body.telecarta {
 
+body.telekarta {
+    background-image: linear-gradient(
+        to bottom right,
+        white,
+        white 14%,
+        #FFD300 14%,
+        #FFD300 28%,
+        #56C4CF 28%,
+        #56C4CF 42%,
+        #A5CD39 42%,
+        #A5CD39 56%,
+        #EC0677 56%,
+        #EC0677 70%,
+        #0080C5 70%,
+        #0080C5 84%,
+        black 84%,
+        black 100%
+        );
 }
-*/
+
 
 a {
     color: white;
@@ -85,10 +93,10 @@ header.ntv {
     background: rgba(57, 168, 42, 0.6);
 }
 
-/*
-header.telecarta {
 
-}*/
+header.telekarta {
+    background: rgba(0, 0, 0, 0.5);
+}
 
 nav {
     min-height: 80px;
@@ -222,6 +230,14 @@ h2 {
     margin-bottom: 40px;
 }
 
+#channels span {
+    font-weight: bold;
+}
+
+#channels h3 {
+    color: #39A82A;
+}
+
 .ntv_price {
     color: #39A82A;
     font-size: 20px;
@@ -272,10 +288,11 @@ footer.ntv {
     background: rgba(57, 168, 42, 0.6);
 }
 
-/*
-footer.telecarta {
+
+footer.telekarta {
+    background: rgba(0, 0, 0, 0.5);
 }
-*/
+
 
 #footer_div {
 padding-top: 20px;
@@ -312,6 +329,7 @@ padding-top: 20px;
 @media screen and (max-width: 719px) {
     .ntv_chars {
         float: none;
+        display: block;
     }
 }
 
