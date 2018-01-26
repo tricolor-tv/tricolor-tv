@@ -257,6 +257,7 @@ h2 {
 .telekarta_price {
     font-weight: bold;
     color: #EC0677;
+    list-style-type: none;
 }
 
 #telekarta_additional span {
