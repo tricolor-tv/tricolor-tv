@@ -255,6 +255,7 @@ h2 {
 }
 
 .telekarta_price {
+    font-size: 20px;
     font-weight: bold;
     color: #EC0677;
     list-style-type: none;
