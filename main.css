@@ -271,7 +271,7 @@ h2 {
 }
 
 #telekarta_additional p:nth-child(2n) {
-    background: rgb(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .telekarta_headers {
