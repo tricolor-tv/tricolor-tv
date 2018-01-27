@@ -23,6 +23,10 @@ body {
     background-attachment: fixed;
 }
 
+body img {
+    width: 250px;
+}
+
 body.tricolor {
     background-image: linear-gradient(
         to bottom right,
@@ -230,6 +234,10 @@ h2 {
     margin-bottom: 40px;
 }
 
+#addresses ~ img {
+    width: inherit;
+}
+
 #telekarta_equipment {
     margin-top: 20px;
 }
@@ -277,6 +285,14 @@ h2 {
 
 .telekarta_headers {
     font-weight: bold;
+}
+
+#packages ~ img {
+    width: 100%;
+}
+
+.tariff img {
+    width: inherit;
 }
 
 #channels span {
