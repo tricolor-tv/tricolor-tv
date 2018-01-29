@@ -372,8 +372,8 @@ padding-top: 20px;
     font-family: Fontello;
     display: inline-block;
     text-decoration: none; 
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
 }
 
 #made_in {
@@ -386,8 +386,17 @@ padding-top: 20px;
    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @media screen and (max-width: 639px) {
+
     .main_content {
         padding: 40px 0;
+    }
+    
+    #year {
+        float: none;
+    }
+    
+    #made_in {
+        float: none;
     }
 }
 
@@ -406,19 +415,5 @@ padding-top: 20px;
 @media screen and (max-width: 959px) {
     #contacts {
         position: static;
-    }
-}
-
-@media screen and (max-width: 550px) {
-    footer {
-        height: 80px;
-    }
-    
-    #year {
-        float: none;
-    }
-    
-    #made_in {
-        float: none;
     }
 }
