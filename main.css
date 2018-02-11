@@ -337,6 +337,10 @@ h2 {
     margin-bottom: 0;
 }
 
+.noscript_map {
+    width: 100%;
+}
+
 .map {
     display: inline-block;
     min-height: 480px;
