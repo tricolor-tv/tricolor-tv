@@ -338,6 +338,7 @@ h2 {
 }
 
 .noscript_map {
+    width: inherit;
     max-width: 100%;
 }
 
@@ -350,17 +351,18 @@ h2 {
 #antenniy_mir2,
 #salon {
     width: 100%;
-    height: 480px;
+    /*max-height: 480px;*/
+    max-height: 480px;
 }
 
 /* ~~~~~~~~~ Карты ~~~~~~~~~~~~~ */
 
 
-.map {
+/*.map {
     min-height: 480px;
     width: 100%;
-    /*min-width: 320px;*/
-}
+    min-width: 320px;*
+}*/
 
 footer {
     min-height: 60px;
