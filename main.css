@@ -415,10 +415,10 @@ footer.telekarta {
         padding: 40px 0;
     }
     
-    #market,
-    #antenniy_mir2,
-    #salon {
-        max-height: 80vh;
+    #market > ymaps,
+    #antenniy_mir2 > ymaps,
+    #salon > ymaps{
+        height: 70vh !important;
     }
     
     #year {
