@@ -351,15 +351,14 @@ h2 {
 #antenniy_mir2,
 #salon {
     width: 100%;
-    /*max-height: 480px;*/
     max-height: 480px;
 }
 
 /* ~~~~~~~~~ Карты ~~~~~~~~~~~~~ */
 
-.ymaps-2-1-56-map{
+/*.ymaps-2-1-56-map{
     pointer-events: none;
-}
+}*/
 
 
 footer {
@@ -414,6 +413,12 @@ footer.telekarta {
 
     .main_content {
         padding: 40px 0;
+    }
+    
+    #market,
+    #antenniy_mir2,
+    #salon {
+        max-height: 80vh;
     }
     
     #year {
