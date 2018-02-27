@@ -357,18 +357,10 @@ h2 {
 
 /* ~~~~~~~~~ Карты ~~~~~~~~~~~~~ */
 
-/*
-.ymaps-map {
-    -ms-touch-action: auto !important;
-    touch-action: auto !important;
+.ymaps-2-1-56-map{
+    pointer-events: none;
 }
-*/
 
-/*.map {
-    min-height: 480px;
-    width: 100%;
-    min-width: 320px;*
-}*/
 
 footer {
     min-height: 60px;
