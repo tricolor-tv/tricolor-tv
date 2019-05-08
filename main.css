@@ -422,6 +422,16 @@ footer.telekarta {
    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+@media screen and (max-width: 479px) {
+    .ntv_chars {
+        width: 100%;
+    }
+    
+    .telekarta_chars {
+        width: 100%
+    }
+}
+
 @media screen and (max-width: 639px) {
 
     .main_content {
