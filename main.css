@@ -255,8 +255,10 @@ h2 {
 }
 
 .telekarta_chars {
+    width: 50%;
     float: right;
 }
+
 
 .telekarta_equipment_details {
     clear: both;
@@ -276,8 +278,12 @@ h2 {
 
 #telekarta_additional p span:first-child {
     display: inline-block;
-    width: 22%;
+    width: 50%;
 }
+
+/*#telekarta_additional p {
+    vertical-align: text-top;
+}*/
 
 #telekarta_additional p:nth-child(2n) {
     background: rgba(0, 0, 0, 0.1);
