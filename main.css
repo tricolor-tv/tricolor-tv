@@ -218,6 +218,7 @@ h2 {
 .ntv_chars {
     display: inline-block;
     float: right;
+    width: 50%;
     margin-top: 0;
 }
 
