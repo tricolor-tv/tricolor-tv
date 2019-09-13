@@ -177,6 +177,13 @@ main {
     color: #05F;
 }
 
+#logo {
+    padding: 15px;
+    margin-right: 20px;
+    background: white;
+    float: left;
+}
+
 p {
     /*height: 20px;*/
     margin-top: 0;
