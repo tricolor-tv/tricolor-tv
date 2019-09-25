@@ -69,6 +69,10 @@ body.telekarta {
         );
 }
 
+b {
+    font-weight: bold;
+}
+
 .nb {
     white-space: nowrap;
 }
@@ -280,6 +284,15 @@ h2 {
     width: inherit;
 }
 
+body.telekarta a {
+    color:#0080C5; 
+}
+
+header.telekarta a,
+footer.telekarta a {
+    color:white;
+}
+
 #telekarta_equipment {
     margin-top: 20px;
 }
@@ -311,6 +324,10 @@ h2 {
     font-weight: bold;
     color: #EC0677;
     list-style-type: none;
+}
+
+#telekarta_additional_header {
+    color: #EC0677;
 }
 
 #telekarta_additional span {
