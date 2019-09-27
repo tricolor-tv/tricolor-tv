@@ -283,9 +283,14 @@ h2 {
 
 .hidden_button {
     display: inline-block;
-    text-decoration: underline;
-    text-decoration-style: dashed;
+    /*text-decoration: underline;
+    text-decoration-style: dashed;*/
     padding: 10px;
+}
+
+.hidden_button:after {
+    font-size: 12px;
+    content: ' ▼';
 }
 
 body.tricolor .hidden_button {
@@ -469,6 +474,7 @@ footer.telekarta a {
     font-size: 20px;
     font-weight: 700;
     float: right;
+    margin-top: -6px;
 }
 
 #addresses ~ img {
