@@ -69,6 +69,14 @@ body.telekarta {
         );
 }
 
+hr {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+ul {
+    list-style-type: circle;
+}
+
 b {
     font-weight: bold;
 }
@@ -112,6 +120,11 @@ header.ntv {
 
 header.telekarta {
     background: rgba(0, 0, 0, 0.5);
+}
+
+.figure_dash {
+    vertical-align: 5px;
+    font-size: 24px;
 }
 
 nav {
@@ -226,9 +239,9 @@ h2 {
     margin-top: 100px;
 }
 
-#equipment ~ h3 {
+/*#equipment ~ h3 {
     margin-top: 60px;
-}
+}*/
 
 #equipment ~ h3.first {
     margin-top: 20px;
@@ -245,7 +258,16 @@ h2 {
 
 .img_firmware a {
     display: inline-block;
-    padding: 10px 10px 10px 0px;
+    padding: 10px;
+}
+
+#b532m_c592 {
+    margin-bottom: 40px;
+}
+
+#b532m_c592 a {
+    margin-top: 10px;
+    padding: 0;
 }
 
 .tricolor_equipment_specs {
@@ -257,7 +279,50 @@ h2 {
 .tricolor_equipment_specs ul {
     padding-left: 30px;
     margin: 0;
-    list-style-type: circle;
+}
+
+.hidden_button {
+    display: inline-block;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    padding: 10px;
+}
+
+body.tricolor .hidden_button {
+    color: rgb(0, 85, 255);
+}
+
+.detailed_specs b {
+    margin-left: 10px;
+}
+
+.detailed_specs_button {
+    display: block;
+    position: relative;
+    top: -40px;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.detailed_specs_button + div {
+    height: 0;
+    overflow: hidden;
+}
+
+.detailed_specs_button:checked + div {
+    height: auto;
+}
+
+.detailed_specs {
+    position: relative;
+    top: -40px;
+}
+
+.detailed_specs ul {
+    margin-top: 6px;
+    padding-left: 25px;
 }
 
 .ntv_chars {
@@ -279,6 +344,12 @@ h2 {
     clear: both;
     margin-bottom: 40px;
 }
+
+#ntv_additional p:nth-child(2n) {
+    display: inline-block;
+    background: rgba(57, 168, 42, 0.11);
+}
+
 
 #addresses ~ img {
     width: inherit;
@@ -330,22 +401,29 @@ footer.telekarta a {
     color: #EC0677;
 }
 
-#telekarta_additional span {
+/*
+#telekarta_additional p {
+    display: inline-block;
+}*/
+
+
+/*#telekarta_additional span {
     display: inline-block;
     width: 35%;
-}
+}*/
 
-#telekarta_additional p span:first-child {
+/*#telekarta_additional p span:first-child {
     display: inline-block;
     width: 50%;
-}
+}*/
 
 /*#telekarta_additional p {
     vertical-align: text-top;
 }*/
 
 #telekarta_additional p:nth-child(2n) {
-    background: rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.06);
 }
 
 .telekarta_headers {
