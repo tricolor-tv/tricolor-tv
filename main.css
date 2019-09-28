@@ -77,6 +77,10 @@ ul {
     list-style-type: circle;
 }
 
+ul li ul {
+    list-style-type: square;
+}
+
 b {
     font-weight: bold;
 }
@@ -270,15 +274,19 @@ h2 {
     padding: 0;
 }
 
-.tricolor_equipment_specs {
+.equipment_specs {
     display: inline-block;
     max-width: 380px;
     vertical-align: top;
 }
 
-.tricolor_equipment_specs ul {
+.equipment_specs ul {
     padding-left: 30px;
     margin: 0;
+}
+
+.equipment_specs p {
+    padding-left: 15px;
 }
 
 .hidden_button {
@@ -453,10 +461,10 @@ footer.telekarta a {
 
 .ntv_price {
     color: #39A82A;
-    font-size: 20px;
+    /*font-size: 20px;
     font-weight: bold;
     list-style-type: none;
-    padding-top: 10px;
+    padding-top: 10px;*/
 }
 
 
@@ -470,11 +478,14 @@ footer.telekarta a {
 }
 
 .price {
-    color: #F22;
     font-size: 20px;
     font-weight: 700;
     float: right;
     margin-top: -6px;
+}
+
+.tricolor_price {
+    color: #F22;
 }
 
 #addresses ~ img {
@@ -566,7 +577,7 @@ footer.telekarta {
 
 @media screen and (max-width: 479px) {
 
-    .tricolor_equipment_specs ul {
+    .equipment_specs ul {
         padding-left: 16px;
     }
 
