@@ -214,7 +214,6 @@ main {
 }
 
 p {
-    /*height: 20px;*/
     margin-top: 0;
     margin-bottom: 10px;
     line-height: 20px;
@@ -377,62 +376,17 @@ footer.telekarta a {
     color:white;
 }
 
-#telekarta_equipment {
-    margin-top: 20px;
-}
-
-#telekarta_receivers div:first-of-type {
-    float: right;
-}
-
-#telekarta_receivers img {
-    margin-top: 20px;
-}
-
-#telekarta_receivers h3 {
-    margin-top: 40px;
-}
-
-.telekarta_chars {
-    width: 50%;
-    float: right;
-}
-
-
 .telekarta_equipment_details {
     clear: both;
 }
 
 .telekarta_price {
-    font-size: 20px;
-    font-weight: bold;
     color: #EC0677;
-    list-style-type: none;
 }
 
 #telekarta_additional_header {
     color: #EC0677;
 }
-
-/*
-#telekarta_additional p {
-    display: inline-block;
-}*/
-
-
-/*#telekarta_additional span {
-    display: inline-block;
-    width: 35%;
-}*/
-
-/*#telekarta_additional p span:first-child {
-    display: inline-block;
-    width: 50%;
-}*/
-
-/*#telekarta_additional p {
-    vertical-align: text-top;
-}*/
 
 #telekarta_additional p:nth-child(2n) {
     display: inline-block;
@@ -461,18 +415,14 @@ footer.telekarta a {
 
 .ntv_price {
     color: #39A82A;
-    /*font-size: 20px;
-    font-weight: bold;
-    list-style-type: none;
-    padding-top: 10px;*/
 }
 
 
-#action ~ h3 {
+#exchange ~ h3 {
     margin-top: 40px;
 }
 
-#action ~ img {
+#exchange ~ img {
     display: block;
     margin-bottom: 20px;
 }
@@ -486,6 +436,10 @@ footer.telekarta a {
 
 .tricolor_price {
     color: #F22;
+}
+
+#tricolor_bonus {
+    margin-top: 0px;
 }
 
 #addresses ~ img {
