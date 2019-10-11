@@ -219,12 +219,12 @@ p {
     line-height: 20px;
 }
 
-.tariff {
+.tarif {
     clear: left;
     margin-bottom: 40px;
 }
 
-.tariff>img {
+.tarif>img {
     float: left;
     padding-right: 20px;
 }
@@ -242,10 +242,6 @@ h2 {
     margin-top: 100px;
 }
 
-/*#equipment ~ h3 {
-    margin-top: 60px;
-}*/
-
 #equipment ~ h3.first {
     margin-top: 20px;
 }
@@ -262,6 +258,14 @@ h2 {
 .img_firmware a {
     display: inline-block;
     padding: 10px;
+}
+
+.img_firmware a:link {
+    text-decoration: none;
+}
+
+.img_firmware a:hover {
+    text-decoration: underline;
 }
 
 #b532m_c592 {
@@ -290,14 +294,24 @@ h2 {
 
 .hidden_button {
     display: inline-block;
-    /*text-decoration: underline;
-    text-decoration-style: dashed;*/
+    height: 20px;
+    position: relative;
+    top: -40px;
     padding: 10px;
+    z-index: 1;
 }
 
 .hidden_button:after {
+    display: inline-block;
+    width: 24px;
+    height: 19px;  
     font-size: 12px;
-    content: ' ▼';
+    padding-top: 5px;
+    vertical-align: middle !important;
+    text-align: center;
+    content: '▼';
+    transform: rotate(-90deg);
+    transition: 0.9s;
 }
 
 body.tricolor .hidden_button {
@@ -311,20 +325,30 @@ body.tricolor .hidden_button {
 .detailed_specs_button {
     display: block;
     position: relative;
-    top: -40px;
-    width: 200px;
+    width: 214px;
     height: 40px;
     cursor: pointer;
     opacity: 0;
+    z-index: 2;
 }
 
-.detailed_specs_button + div {
-    height: 0;
+.detailed_specs_button:hover + div {
+    text-decoration: underline;
+}
+
+.detailed_specs_button + div + div {
+    max-height: 0;
+    transition: max-height 0.4s ease-out;
     overflow: hidden;
 }
 
-.detailed_specs_button:checked + div {
-    height: auto;
+.detailed_specs_button:checked + div + div {
+    max-height: 9999px;
+}
+
+.detailed_specs_button:checked + div::after {
+    transform: rotate(0deg);
+    transition: 0.4s;
 }
 
 .detailed_specs {
@@ -336,6 +360,12 @@ body.tricolor .hidden_button {
     margin-top: 6px;
     padding-left: 25px;
 }
+
+#tricolor_internet {
+    clear: both;
+    margin-top: 100px;
+}
+
 
 .ntv_chars {
     display: inline-block;
@@ -401,7 +431,7 @@ footer.telekarta a {
     width: 100%;
 }
 
-.tariff img {
+.tarif img {
     width: inherit;
 }
 
