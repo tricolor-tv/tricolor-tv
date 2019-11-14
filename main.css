@@ -409,7 +409,7 @@ section.equipment {
 
 
 .internet_button {
-    width: 380px;
+    width: 360px;
 }
 
 .internet_button + div {
@@ -629,11 +629,11 @@ footer.telekarta {
         height: 70vh !important;
     }
 
-    #year {
+    .year {
         float: none;
     }
 
-    #made_in {
+    .made_in {
         float: none;
     }
 }
