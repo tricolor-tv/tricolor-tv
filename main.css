@@ -595,6 +595,7 @@ footer.telekarta {
 .bottom_nav {
     display: inline-block;
     height: 60px;
+    padding: 0 10px;
 }
 
 .made_in {
