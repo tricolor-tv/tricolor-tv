@@ -83,6 +83,10 @@ b {
     font-weight: bold;
 }
 
+small {
+    display: block;
+    margin: 10px 0;
+}
 
 .primary {
     margin-bottom: 50px;
@@ -308,7 +312,8 @@ section.equipment {
     padding-left: 30px;
 }
 
-.equipment_specs p {
+.equipment_specs p,
+.equipment_specs small {
     padding-left: 15px;
 }
 
@@ -322,6 +327,11 @@ section.equipment {
     padding: 10px 10px 10px 0;
     color: rgb(0, 85, 255);
 }
+
+.hidden_button_2 {
+    top: -80px;
+}
+
 
 .hidden_button:after {
     display: inline-block;
@@ -339,6 +349,16 @@ section.equipment {
 
 .equipment_button {
     width: 200px;
+}
+
+.equipment_button_2 {
+    width: 125px;
+    top: -40px;
+}
+
+
+.exchange_equipment_button {
+    width: 267px;
 }
 
 
@@ -374,6 +394,11 @@ section.equipment {
 .detailed_specs {
     position: relative;
     top: -40px;
+}
+
+.hidden_button_2 + .detailed_specs {
+    top: -80px;
+    margin-bottom: -80px;
 }
 
 .detailed_specs ul {
@@ -494,6 +519,9 @@ section.equipment {
     margin-bottom: 40px;
 }
 
+.exchange_equipment {
+    margin-bottom: 20px;
+}
 
 .price {
     float: right;
