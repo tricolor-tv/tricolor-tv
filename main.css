@@ -26,7 +26,8 @@ body img {
     width: 250px;
 }
 
-body#tricolor {
+/*body#tricolor {*/
+html {
     background-image: linear-gradient(
         to bottom right,
         white,
