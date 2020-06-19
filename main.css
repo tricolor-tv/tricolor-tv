@@ -155,6 +155,7 @@ header.telekarta {
 
 nav {
     min-height: 80px;
+    display: inline-block;
 }
 
 
@@ -164,11 +165,12 @@ nav {
 }
 
 
-h1 {
+nav h1 {
     margin: 0;
     font-size: 30px;
     line-height: 40px;
     font-weight: normal;
+    margin-right: -228px;
 }
 
 h2 {
@@ -186,11 +188,10 @@ h3 {
 
 
 .contacts {
-    position: absolute;
-    top: 0;
-    right: 20px;
     font-size: 30px;
     line-height: 40px;
+    float: right;
+    margin-right: 10px;
 }
 
 
@@ -676,7 +677,12 @@ footer.telekarta {
 
 
 @media screen and (max-width: 959px) {
+    nav h1 {
+        margin-right: 0;
+    }
+
     .contacts {
-        position: static;
+        float: none;
+        margin-right: 0;
     }
 }
