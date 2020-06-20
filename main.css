@@ -131,21 +131,19 @@ header.telekarta a {
     color: rgb(230, 0, 124);
 }
 
-header.tricolor div::selection,
-header.tricolor a::selection {
+header *::selection {
     color: white;
+}
+
+header.tricolor *::selection {
     background: rgb(0, 175, 255);
 }
 
-header.ntv div::selection,
-header.ntv a::selection {
-    color: white;
+header.ntv *::selection {
     background: rgb(50, 230, 40);
 }
 
-header.ntv div::selection,
-header.ntv a::selection {
-    color: white;
+header.telekarta *::selection {
     background: rgb(230, 0, 124);
 }
 
