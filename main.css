@@ -110,7 +110,9 @@ header a {
     text-decoration: none;
 }
 
-header a[itemprop="brand"] {
+header.tricolor a[itemprop="brand"],
+header.ntv a[itemprop="brand"],
+header.telekarta a[itemprop="brand"] {
     border-bottom: none;
 }
 
