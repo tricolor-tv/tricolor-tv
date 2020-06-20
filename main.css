@@ -20,6 +20,7 @@ body {
     font-family: "Roboto condensed";
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 body img {
@@ -27,45 +28,15 @@ body img {
 }
 
 body#tricolor {
-    background-image: linear-gradient(
-        to bottom right,
-        white,
-        white 33%,
-        #05F 33%,
-        #05F 66%,
-        #F22 66%
-    );
+    background-image: url('tricolor_background.svg');
 }
 
 body#ntv {
-        background-image: linear-gradient(
-        to bottom right,
-        white,
-        white 33%,
-        #39A82A 33%,
-        #39A82A 66%,
-        white 66%
-    );
+        background-image: url('');
 }
 
 body#telekarta {
-    background-image: linear-gradient(
-        to bottom right,
-        white,
-        white 14%,
-        #FFD300 14%,
-        #FFD300 28%,
-        #56C4CF 28%,
-        #56C4CF 42%,
-        #A5CD39 42%,
-        #A5CD39 56%,
-        #EC0677 56%,
-        #EC0677 70%,
-        #0080C5 70%,
-        #0080C5 84%,
-        black 84%,
-        black 100%
-    );
+    background-image: url('');
 }
 
 
@@ -121,13 +92,12 @@ small {
 header {
     min-height: 140px;
     padding-bottom: 10px;
-    color: white;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    color: rgb(0, 175, 255);
 }
 
 header a {
-    border-bottom: 2px solid white;
-    color: white;
+    border-bottom: 2px solid rgba(40, 167, 255, 0.7);
+    color: rgb(0, 175, 255);
     text-decoration: none;
 }
 
@@ -138,19 +108,7 @@ header a[itemprop="brand"] {
 header div::selection,
 header a::selection {
     color: white;
-    background: rgba(0, 0, 0, 0.3);
-}
-
-header.tricolor {
-    background: rgba(0, 128, 255, 0.6);
-}
-
-header.ntv {
-    background: rgba(57, 168, 42, 0.6);
-}
-
-header.telekarta {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgb(0, 175, 255);
 }
 
 
@@ -218,12 +176,13 @@ main a:hover {
     padding: 40px;
     margin: 40px 0;
     text-align: left;
+    color: #222;
     background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 8px rgba(0,0,0,0.45);
 }
 
 .main_content a {
-    color: #05F;
+    color: rgb(0, 145, 240);
 }
 
 
@@ -327,7 +286,7 @@ section.equipment {
     height: 20px;
     top: -40px;
     padding: 10px 10px 10px 0;
-    color: rgb(0, 85, 255);
+    color: rgb(0, 145, 240);
 }
 
 .hidden_button_2 {
@@ -344,6 +303,7 @@ section.equipment {
     text-align: center;
     content: '▼';
     font-size: 12px;
+    color: rgba(0, 125, 240, 0.6);
     transform: rotate(-90deg);
     transition: 0.9s;
 }
@@ -591,23 +551,10 @@ footer {
     min-height: 60px;
     width: 100%;
     color: white;
-    box-shadow: 0 -2px 10px rgba(0,0,0,0.5);
 }
 
 footer a {
     color: white;
-}
-
-footer.tricolor {
-    background: rgba(0, 128, 255, 0.6);
-}
-
-footer.ntv {
-    background: rgba(57, 168, 42, 0.6);
-}
-
-footer.telekarta {
-    background: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -677,6 +624,51 @@ footer.telekarta {
 }
 
 
+@media screen and (max-height: 679px) {
+    body {
+        background-position-y: 90px;
+    }
+
+    nav {
+        min-height: 60px;
+        display: inline-block;
+    }
+
+
+    .figure_dash {
+        vertical-align: 3px;
+        font-size: 18px;
+    }
+
+
+    nav h1 {
+        margin: 0;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: normal;
+        margin-right: -228px;
+    }
+
+    .official_dealer {
+        font-size: 16px;
+    }
+
+    .contacts {
+        font-size: 20px;
+        line-height: 30px;
+        float: right;
+        margin-right: 10px;
+    }
+
+
+    .main_content {
+        /*color: green !important;*/
+        margin-top: 20px;
+    }
+
+}
+
+
 @media screen and (max-width: 959px) {
     nav h1 {
         margin-right: 0;
@@ -685,5 +677,9 @@ footer.telekarta {
     .contacts {
         float: none;
         margin-right: 0;
+    }
+
+    .main_content {
+        background: rgba(255, 255, 255, 0.85);
     }
 }
