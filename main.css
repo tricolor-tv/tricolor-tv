@@ -479,7 +479,7 @@ section.equipment {
     margin-top: 10px;
 }
 
-.addresses > img {
+.addresses > picture > img {
     width: inherit;
 }
 
