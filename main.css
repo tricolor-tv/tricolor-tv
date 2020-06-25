@@ -59,6 +59,10 @@ small {
     margin: 10px 0;
 }
 
+picture {
+    display: inline-block;
+}
+
 .primary {
     margin-bottom: 50px;
 }
@@ -250,11 +254,13 @@ section.equipment {
     margin-bottom: 10px;
 }
 
-.tarif img {
+.tarif img,
+.tarif picture {
     width: inherit;
 }
 
-.tarif > img {
+.tarif img,
+.tarif picture {
     float: left;
     width: 83px;
     height: 80px;
@@ -546,7 +552,8 @@ section.equipment {
 }
 
 
-.addresses > img {
+.addresses img,
+.addresses picture {
     max-width: 100%;
 }
 
