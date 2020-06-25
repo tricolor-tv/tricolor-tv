@@ -1129,26 +1129,18 @@
     <script>
 
     setTimeout(function(){
-        var body = document.getElementsByTagName('body')[0];
-
-	    var map1 = document.createElement('script');
-	    map1.type = 'text/javascript';
-	    map1.src = 'https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae491a2f4892762ccebe3e478573df82b5826fea7fb9760deb817082882714022&amp;height=480&amp;lang=ru_RU&amp;scroll=false&amp;id=market';
-	    body.appendChild(map1);
-
-        var map2 = document.createElement('script');
-	    map2.type = 'text/javascript';
-	    map2.src = 'https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab4b567ba0c8227d34b10e92a5bef60010cb0a49cf7ec03470070020ef340bc35&amp;height=480&amp;lang=ru_RU&amp;scroll=false&amp;id=antenniy_mir2';
-        body.appendChild(map2);
-
-        var map3 = document.createElement('script');
-	    map3.type = 'text/javascript';
-	    map3.src = 'https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A25990171563d523e10024402110e574928c7a4f0f6e52b3c2a4e0050d645d1c9&amp;height=480&amp;lang=ru_RU&amp;scroll=false&amp;id=salon';
-        body.appendChild(map3);
-
+        var body = document.getElementsByTagName('body')[0],
+            map1 = document.createElement('script'),
+            map2 = document.createElement('script'),
+            map3 = document.createElement('script');
+        map1.type = map2.type = map3.type = 'text/javascript';
+        map1.src = 'https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae491a2f4892762ccebe3e478573df82b5826fea7fb9760deb817082882714022&amp;height=480&amp;lang=ru_RU&amp;scroll=false&amp;id=market';
+        map2.src = 'https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab4b567ba0c8227d34b10e92a5bef60010cb0a49cf7ec03470070020ef340bc35&amp;height=480&amp;lang=ru_RU&amp;scroll=false&amp;id=antenniy_mir2';
+        map3.src = 'https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A25990171563d523e10024402110e574928c7a4f0f6e52b3c2a4e0050d645d1c9&amp;height=480&amp;lang=ru_RU&amp;scroll=false&amp;id=salon';
+        body.appendChild(map1).appendChild(map2).appendChild(map3);
         map.behaviors.disable('drag');
+    }, 1800);
 
-    }, 1500);
     </script>
 
 </body>

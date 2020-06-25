@@ -16,8 +16,6 @@
     <meta property="og:image" content="http://taganrog-tv.ru/img/telekarta_logo.png">
 
     <title>Спутниковое телевидение</title>
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae491a2f4892762ccebe3e478573df82b5826fea7fb9760deb817082882714022&amp;height=480&amp;lang=ru_RU&amp;scroll=false&amp;id=market"></script>
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab4b567ba0c8227d34b10e92a5bef60010cb0a49cf7ec03470070020ef340bc35&amp;height=480&amp;lang=ru_RU&amp;scroll=false&amp;id=antenniy_mir2"></script>
 
 </head>
 
@@ -470,6 +468,21 @@
         </footer>
 
     </div>
+
+    <script>
+
+        setTimeout(function(){
+            var body = document.getElementsByTagName('body')[0],
+                map1 = document.createElement('script'),
+                map2 = document.createElement('script');
+            map1.type = map2.type = map3.type = 'text/javascript';
+            map1.src = 'https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae491a2f4892762ccebe3e478573df82b5826fea7fb9760deb817082882714022&amp;height=480&amp;lang=ru_RU&amp;scroll=false&amp;id=market';
+            map2.src = 'https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab4b567ba0c8227d34b10e92a5bef60010cb0a49cf7ec03470070020ef340bc35&amp;height=480&amp;lang=ru_RU&amp;scroll=false&amp;id=antenniy_mir2';
+            body.appendChild(map1).appendChild(map2);
+            map.behaviors.disable('drag');
+        }, 1800);
+
+    </script>
 
 </body>
 
