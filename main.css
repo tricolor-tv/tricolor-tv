@@ -49,6 +49,9 @@ ul {
     list-style-type: circle;
 }
 
+ul li ul {
+    list-style-type: disc;
+}
 
 b {
     font-weight: bold;
@@ -293,11 +296,11 @@ section.equipment {
 }
 
 
-#b532m_c592 {
+#b522_c592 {
     margin-bottom: 40px;
 }
 
-#b532m_c592 a {
+#b522_c592 a {
     margin-top: 10px;
     padding: 0;
 }
