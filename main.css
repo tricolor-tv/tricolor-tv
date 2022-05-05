@@ -1,15 +1,41 @@
 @font-face {
     font-family: "Roboto condensed";
-    src: url('robotocondensed-light.woff') format('woff');
-    font-weight: light;
+    src: url('roboto_condensed-300.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto condensed";
+    src: url('roboto_condensed-400.woff') format('woff');
+    font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Fontello";
     src: url('fontello.woff') format('woff');
-    font-weight: normal;
+    font-weight: 300;
     font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+button {
+border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    -webkit-appearance: none;
 }
 
 
@@ -21,23 +47,45 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
+    font-weight: 300;
+    color: #333;
 }
 
-body img {
-    width: 250px;
+
+
+/*
+body {
+    scrollbar-color: rgb(0, 175, 255) white;
 }
+
+body::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+}
+ 
+body::-webkit-scrollbar-thumb {
+    background: rgb(0, 175, 255);
+}
+ 
+body::-webkit-scrollbar-track {
+    background: white;
+}*/
+
+
 
 body#tricolor {
-    background-image: url('tricolor_background.svg');
+    background-image: url('img/background_tricolor_1080.png');
 }
 
 body#ntv {
-    background-image: url('ntv/ntv_background.svg');
+    background-image: url('img/background_ntv_1080.png');
 }
 
 body#telekarta {
-    background-image: url('telekarta/telekarta_background.svg');
+    background-image: url('img/background_telekarta_1080.png');
 }
+
 
 
 hr {
@@ -45,17 +93,6 @@ hr {
 }
 
 
-ul {
-    list-style-type: circle;
-}
-
-ul li ul {
-    list-style-type: disc;
-}
-
-b {
-    font-weight: bold;
-}
 
 small {
     display: block;
@@ -67,7 +104,14 @@ picture {
 }
 
 .primary {
-    margin-bottom: 50px;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-left: 43px;
+}
+
+.primary:last-child {
+    padding-top: 0;
+    padding-bottom: 40px;
 }
 
 
@@ -99,46 +143,20 @@ picture {
 header {
     min-height: 140px;
     padding-bottom: 0;
-}
-
-header.tricolor {
-    color: rgb(0, 175, 255);
-}
-
-header.ntv {
-    color: rgb(50, 230, 40);
-}
-
-header.telekarta {
-    color: rgb(230, 0, 124)
+    color: white;
 }
 
 header a {
     text-decoration: none;
 }
 
-header.tricolor a[itemprop="brand"],
-header.ntv a[itemprop="brand"],
-header.telekarta a[itemprop="brand"] {
+header a[itemprop="brand"] {
     border-bottom: none;
 }
 
-header.tricolor a {
-    border-bottom: 2px solid rgba(40, 167, 255, 0.7);
-    color: rgb(0, 175, 255);
-}
 
-header.ntv a {
-    border-bottom: 2px solid rgba(50, 240, 10, 0.7);
-    color: rgb(50, 230, 40);
-}
-
-header.telekarta a {
-    border-bottom: 2px solid rgba(240, 0, 114, 0.7);
-    color: rgb(230, 0, 124);
-}
-
-header *::selection {
+header a {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.7);
     color: white;
 }
 
@@ -147,7 +165,7 @@ header.tricolor *::selection {
 }
 
 header.ntv *::selection {
-    background: rgb(50, 230, 40);
+    background: rgb(50, 215, 40);
 }
 
 header.telekarta *::selection {
@@ -160,22 +178,52 @@ nav {
 }
 
 
-.figure_dash {
-    vertical-align: 5px;
+.figure_dash_header {
+    vertical-align: 2px;
     font-size: 24px;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.figure_dash_main_text {
+    vertical-align: 1px;
+    font-size: 18px;
+    font-weight: 900;
 }
 
 
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+    font-weight: 400;
+    color: #020202;
+}
+
 nav h1 {
-    margin: 50px 0 0 0;
-    font-size: 30px;
+    margin: 30px 0 0 0;
+    font-size: 34px;
     line-height: 40px;
-    font-weight: normal;
-    margin-right: -228px;
+    font-weight: 300;
+    color: white;
 }
 
 h2 {
     font-size: 24px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.ntv_channel_packages_h2 {
+    margin-top: 60px;
+}
+
+.telekarta_channel_packages_h2 {
+    margin-top: 60px;
 }
 
 h3 {
@@ -184,42 +232,381 @@ h3 {
 
 
 .official_dealer {
-    font-size: 20px;
+    font-size: 18px;
+    margin-left: 3px;
+    color: white;
 }
 
 
 .contacts {
-    font-size: 30px;
+    font-family: "Roboto condensed", "fontello";
+    font-size: 22px;
+    line-height: 28px;
+    margin-top: 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contacts > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 500px;
+    justify-content: space-evenly;
+    margin-left: 4px;
+}
+
+.tagline {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+
+.icon-mobile:before { 
+    content: '\e800';
+    font-size: 16px;
+    vertical-align: 1px;
+}
+.icon-phone:before {
+    content: '\e801';
+    font-size: 16px;
+    vertical-align: 3px;
+}
+
+
+
+.intro {
+    font-size: 17px;
+    line-height: 24px;
+}
+
+
+.channel_packages_intro {
+    font-size: 17px;
+    line-height: 24px;
+    padding: 30px 50px;
+    padding-top: 0;
+    margin-top: -20px;
+}
+
+
+
+section.channel_packages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 44px;
+}
+
+
+.channel_card {
+    /*display: inline-block;*/
+    text-align: center;
+    width: 260px;
+    padding: 40px 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.channel_card > h3 {
+    text-align: center;
+    margin: 0;
+}
+
+.channel_price {
+    text-align: left;
+    font-weight: 400;
+    margin-left: 40px;
+}
+
+.channel_price > span,
+.telekarta > .channel_price > div > span {
+    color: red;
+}
+
+.channels {
+    text-align: left;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.channels > li {
+    padding-bottom: 4px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: rgb(0, 175, 255); /* Change the color */
+    font-weight: 900; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+#ntv ul li::before {
+    color: rgb(50, 215, 40);
+}
+
+#ntv main a {
+    color: rgb(50, 215, 40);
+}
+
+
+#telekarta ul li::before {
+    color: rgb(230, 0, 124);
+}
+
+#telekarta main a {
+    color: rgb(230, 0, 124);
+}
+
+
+ul li ul li::before {
+    font-weight: 300;
+}
+
+.channel_card.ntv > h3,
+.channel_card.telekarta > h3 {
+    text-align: left;
+    margin-left: 40px;
+}
+
+.channel_card > .channel_count {
+    text-align: left;
+    font-size: 22px;
+    margin-left: 40px;
+    margin-top: 20px;
+    
+}
+
+.channel_card.ntv > .channel_count > span {
+    font-weight: 400;
+    color: rgb(50, 215, 40);
+}
+
+.channel_card.telekarta > .channel_count > span {
+    font-weight: 400;
+    color: rgb(230, 0, 124);
+}
+
+
+.channel_card.ntv > .channel_price,
+.channel_card.telekarta > .channel_price {
+    margin-top: 20px;
+}
+
+.channel_description {
+    margin-top: 20px;
+    text-align: left;
+}
+
+
+section.equipment,
+section.exchange,
+section.tricolor_internet_tarifi {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    justify-content: space-evenly;
+    /*align-content: stretch;*/
+    row-gap: 44px;
+    /*gap: 20px;*/
+    
+}
+
+
+.card,
+.exchange_card,
+.tricolor_internet_tarif_card {
+    width: 260px;
+    display: inline-block;
+}
+
+.card > div,
+.exchange_card > div,
+.tricolor_internet_tarif_card > div {
+    text-align: center;
+    padding: 40px 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.card > div > h3,
+.exchange_card > div > h3,
+.tricolor_internet_tarif_card > div > h3 {
+    text-align: center;
+    margin: 0;
+}
+
+.card > div > picture {
+    display: block;
+    text-align: center;
+}
+
+.card > div > picture > img,
+.exchange_card > div > img {
+    display: inline; width: 200px;
+    text-align: center;
+}
+
+.exchange_card > div > img {
+    padding: 40px 0;
+}
+
+/*.card > div > picture > img.double_price {
+    height: 127px;
+}*/
+
+.equipment_name,
+.exchange_name,
+.tricolor_internet_tarif_name {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.card > div > h3.equipment_name,
+.exchange_card > div > h3.exchange_name,
+.tricolor_internet_tarif_name > div > h3.tricolor_internet_tarif_name {
+    font-size: 16px;
+}
+
+.equipment_price,
+.exchange_price,
+.tricolor_internet_tarif_price {
+    color: red;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.card > div > div.equipment_price,
+.exchange_card > div > div.exchange_price,
+.tricolor_internet_tarif_card > div > div.tricolor_internet_tarif_price {
+    text-align: center;
+    font-size: 16px;
+}
+
+
+.plus_tarif {
+    color: #020202;
+}
+
+.card > div > div.equipment_price > span.plus_tarif {
+    font-size: 16px;
+    color: #222;
+}
+
+
+.tricolor_internet_tarifi_header {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 35px;
+
+}
+
+.tricolor_internet_tarif_card > div > h3,
+.tricolor_internet_tarif_card > div > div {
+    margin-bottom: 20px;
+}
+
+
+
+
+.card > div > button.equipment_features,
+.exchange_card > div > button.exchange_button,
+.tricolor_internet_tarif_card > div > button.tricolor_internet_tarif_button {
+    display: inline-block;
+    color: white;
+    background-color: rgb(0, 175, 255);
+    height: 40px;
+    width: 180px;
+    text-align: center;
     line-height: 40px;
-    float: right;
-    margin-right: 10px;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.card > div > button.equipment_features.ntv {
+    background-color: rgb(50, 215, 40);
+}
+
+.card > div > button.equipment_features.telekarta {
+    background-color: rgb(230, 0, 124);
+}
+
+
+.card.ntv img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.equipment_pop-up,
+.exchange_pop-up,
+.tricolor_internet_tarif_pop-up {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    z-index: 2501;
+}
+
+
+.equipment_pop-up > div,
+.exchange_pop-up > div,
+.tricolor_internet_tarif_pop-up > div {
+
+    position: absolute;
+    max-width: 800px;
+    width: 100%;
+    max-height: 90vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 40px 40px 40px;
+    text-align: left;
+    background-color: white;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    overflow: auto;
+
+}
+
+
+
+#telekarta .equipment_pop-up picture {
+    display: block;
+    text-align: center;
+}
+
+#telekarta .equipment_pop-up picture > img {
+    max-width: 512px;
 }
 
 
 main {
     display: table-row;
-    max-width: 680px;
     height: 100%;
-}
-
-main a:link,
-main a:visited {
-    text-decoration: none;
-}
-
-main a:hover {
-    text-decoration: underline;
 }
 
 
 .main_content {
     display: inline-block;
-    max-width: 640px;
-    padding: 40px;
+    max-width: 960px;
     margin: 40px 0;
     text-align: left;
     color: #222;
-    background: rgba(255, 255, 255, 0.9);
+    background: white;
     box-shadow: 0 0 8px rgba(0,0,0,0.45);
 }
 
@@ -228,13 +615,542 @@ main a:hover {
 }
 
 
+
+.vse_vklyucheno {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: -15px 0 0 0;
+}
+
+.vse_vklyucheno > div {
+    max-width: 520px;
+}
+
+.vse_vklyucheno > div > p {
+    margin-top: 0;
+}
+
+
+.exchange_pic {
+    display: block;
+}
+
+.exchange_details b {
+    display: block;
+}
+
+
+.terms_of_exchange {
+    margin-top: 30px;
+}
+
+
+.detailed_terms_of_exchange {
+    display: block;
+    margin-bottom: 30px;
+}
+
+
+
+
+.install {
+    font-family: "Roboto condensed", "fontello";
+    padding: 0 50px;
+}
+
+.install > p {
+    margin-top: -20px;
+    font-size: 17px;
+    line-height: 27px;
+}
+
+.install p a {
+    text-decoration: none;
+    border-bottom: dotted 2px rgb(0, 175, 255);
+}
+
+.install.ntv p a {
+    border-bottom: dotted 2px rgb(50, 230, 40);
+}
+
+
+.install.telekarta p a {
+    border-bottom: dotted 2px rgb(219, 91, 160);
+}
+
+
+
+.tricolor_internet {
+    margin-top: -15px;
+}
+
+.tricolor_internet > p {
+    padding: 0 50px;
+    margin-bottom: 35px;
+    font-size: 17px;
+}
+
+
+.tricolor_internet_tarelka > h3 {
+    margin: 0 50px;
+}
+
+
+.tricolor_internet_equipment {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.tricolor_internet_equipment > ol {
+    line-height: 24px;
+}
+
+.tricolor_internet_equipment > ol > li:nth-child(4) > ul > span {
+    margin-left: -40px;
+}
+
+.tricolor_tarelka_old_price {
+    text-decoration-color: red;
+    text-decoration-thickness: 2px;
+}
+
+
+.tricolor_tarelka_new_price {
+    color: red;
+}
+
+
+
+
+
+
+
+
+
 #logo {
     float: left;
     padding: 15px;
+    padding-bottom: 11px;
     margin-right: 20px;
     background: white;
 }
 
+#logo > img {
+    height: 100px;
+    width: 100px;
+}
+
+
+
+.shop:not(:first-of-type) {
+    margin-top: 60px;
+}
+
+.shop > p:first-child {
+    font-size: 20px;
+}
+
+.shop > p:first-child > b {
+    color: rgb(0, 175, 255);
+    font-weight: 400;
+}
+
+.shop > p > b.ntv_shop_name {
+    color:rgb(50, 215, 40);
+}
+
+.shop > p > b.telekarta_shop_name {
+    color: rgb(230, 0, 124);
+}
+
+
+
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+
+footer > div {
+    max-width: 960px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+footer > div > section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /*justify-content: space-around;*/
+    width: 480px;
+    /*padding: 0 25px;*/
+}
+
+footer > div > section > div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 160px;
+}
+
+footer > div > section > div > a,
+footer > div > section > div > span {
+    width: 160px;
+}
+
+
+
+footer > div > section:first-child > div > a {
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 1px;
+}
+
+
+footer > div > section:nth-child(2) > div:first-child > a:first-child {
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1px;
+}
+
+
+footer > div > section > div > a,
+footer > div > section > div > span {
+    align-self: flex-start;
+    padding: 10px;
+    text-underline-offset: 3px;
+}
+
+
+footer a,
+footer span {
+    font-weight: 300;
+    color: white;
+}
+
+
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+
+@media screen and (min-width: 1921px) {
+
+    body#tricolor {
+        background-image: url('img/background_tricolor_2160.png');
+    }
+
+    body#ntv {
+        background-image: url('img/background_ntv_2160.png');
+    }
+
+    body#telekarta {
+        background-image: url('img/background_telekarta_2160.png');
+    }
+
+}
+
+
+@media screen and (max-width: 840px) {
+
+    .vse_vklyucheno > div {
+        max-width: 480px;
+    }
+
+    .vse_vklyucheno > img {
+        width: 260px;
+        height: 260px
+    }
+
+    .tricolor_internet_equipment > img {
+        width: 260px;
+        height: 260px
+    }
+
+}
+
+
+@media screen and (max-width: 760px) {
+
+    .vse_vklyucheno > img {
+        width: 220px;
+        height: 220px
+    }
+
+    .vse_vklyucheno > div {
+        max-width: 420px;
+        font-size: 15px;
+    }
+
+    .tricolor_internet_equipment > img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .tricolor_internet_equipment > ol {
+        font-size: 15px;
+        max-width: 420px;
+        padding: 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 660px) {
+
+    .vse_vklyucheno > img {
+        width: 300px;
+        height: 300px;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .vse_vklyucheno > div {
+        max-width: 600px;
+        padding: 20px;
+        font-size: 17px;
+    }
+
+    .tricolor_internet_equipment > img {
+        width: 310px;
+        height: 300px;
+        margin: 30px 0;
+    }
+
+    .tricolor_internet_equipment > ol {
+        font-size: 17px;
+        max-width: 600px;
+    }
+
+}
+
+
+@media screen and (max-width: 599px) {
+    
+    .channel_packages,
+    .exchange,
+    .equipment,
+    .tricolor_internet_tarifi {
+
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+        width: 100vw !important;
+        justify-content: left !important;
+        scroll-snap-type: x mandatory;
+        align-items: center;
+
+    }
+
+
+    .channel_card,
+    .exchange_card,
+    .card,
+    .tricolor_internet_tarif_card {
+        flex: 0 0 auto;
+        margin: 0 10px !important;
+        scroll-snap-align: start;
+      
+    }
+
+
+
+    .channel_packages {
+        height: 440px;
+    }
+
+    .channel_card {
+        padding-left: 20px;
+        padding-right: 20px;
+        /*width: 240px;*/
+        height: 392px;
+    }
+
+    .channel_card.ntv {
+        height: 402px;
+    }
+
+
+    #telekarta .channel_packages {
+        height: 490px;
+    }
+
+    #telekarta .channel_card {
+        height: 460px;
+    }
+
+
+    .exchange {
+        height: 390px;
+    }
+
+    .exchange_card {
+        height: 370px;
+    }
+
+    .equipment {
+        height: 424px;
+    }
+
+    .card {
+        height: 400px;
+    }
+
+    .tricolor_internet_tarifi {
+        height: 388px;
+    }
+
+    .tricolor_internet_tarif_card {
+        height: 366px;
+    }
+
+
+}
+
+
+
+
+@media screen and (max-width: 520px) {
+
+    h2 {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    header h1 > a {
+        font-size: 23px;
+    }
+
+    .official_dealer {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .official_dealer > span {
+        display: block;
+    }
+
+    .contacts {
+        width: 100vw;
+        margin: 0;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+    .contacts > div {
+        width: 320px;
+        margin: 0;
+    }
+
+    .figure_dash_header {
+        font-size: 16px;
+        opacity: 0.8;
+    }
+
+    .icon-mobile:before { 
+        font-size: 12px;
+        vertical-align: 1px;
+    }
+
+    .icon-phone:before {
+        font-size: 12px;
+        vertical-align: 2px;
+    }
+
+    .vse_vklyucheno > div > ul {
+        font-size: 15px;
+    }
+
+    .tricolor_internet_equipment > ol {
+        font-size: 15px;
+    }
+    
+
+}
+
+
+
+
+
+@media screen and (max-width: 479px) {
+
+    .intro {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .channel_packages_intro {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .install {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .tricolor_internet > p {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .addresses {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    footer > div > section {
+        width: 160px;
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 390px) {
+
+    
+
+}
+
+
+@media screen and (max-width: 359px) {
+
+    #logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .exchange_details {
+        color: red;
+        padding: 0 10px 10px 10px !important;
+    }
+
+    .tricolor_internet_tarif_details {
+        padding: 0 10px 10px 10px !important;
+    }
+
+}
+
+
+
+
+
+
+
+/*
 
 p {
     margin-top: 0;
@@ -550,9 +1466,6 @@ section.equipment {
     padding-left: 10px;
 }
 
-#tricolor_bonus {
-    margin-top: 0px;
-}
 
 
 .addresses img,
@@ -565,11 +1478,6 @@ section.equipment {
 }
 
 
-.shop {
-    margin-top: 30px;
-    width: inherit;
-    max-width: 100%
-}
 
 
 .noscript_map {
@@ -591,7 +1499,7 @@ section.equipment {
     pointer-events: none;
 }*/
 
-
+/*
 footer {
     min-height: 60px;
     width: 100%;
@@ -631,13 +1539,13 @@ footer a {
     float: right;
     padding-right: 20px;
 }
-
+*/
 
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
+/*
 @media screen and (max-width: 479px) {
 
     .equipment_specs ul {
@@ -703,11 +1611,6 @@ footer a {
         margin-right: 10px;
     }
 
-    /*.main_content {
-        color: green !important;
-        margin-top: 20px;
-    }*/
-
 }
 
 
@@ -721,8 +1624,5 @@ footer a {
         float: none;
         margin-right: 0;
     }
-
-    .main_content {
-        background: rgba(255, 255, 255, 0.85);
-    }
 }
+*/
