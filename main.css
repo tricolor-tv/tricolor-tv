@@ -172,10 +172,7 @@ header.telekarta *::selection {
     background: rgb(230, 0, 124);
 }
 
-nav {
-    min-height: 80px;
-    display: inline-block;
-}
+
 
 
 .figure_dash_header {
@@ -203,13 +200,75 @@ strong {
     color: #020202;
 }
 
-nav h1 {
-    margin: 30px 0 0 0;
-    font-size: 34px;
-    line-height: 40px;
-    font-weight: 300;
+
+
+/*header {
+    margin-top: 40px;
+}*/
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100px;
+}
+
+nav > h1 {
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
     color: white;
 }
+
+
+
+/* rgb(0, 175, 255)     rgb(50, 230, 40)    rgb(219, 91, 160) */
+
+
+#tricolor h1 > a[href="./ntv"] {
+    border-bottom: solid 2px rgb(131, 255, 100);
+    /*color: rgb(219, 253, 190);*/
+}
+
+#tricolor h1 > a[href="./telekarta"] {
+    border-bottom: solid 2px rgb(255, 111, 217);
+    /*color: rgb(255, 188, 235);*/
+}
+
+
+
+
+#ntv h1 > a[href="../"] {
+    border-bottom: solid 2px rgb(0, 247, 255);
+    /*color: rgb(58, 150, 255);*/
+}
+
+#ntv h1 > a[href="../telekarta"] {
+    border-bottom: solid 2px rgb(255, 134, 223);
+    /*color: rgb(255, 80, 203);*/
+}
+
+
+
+#telekarta h1 > a[href="../"] {
+    border-bottom: solid 2px rgb(0, 204, 255);
+    /*color: rgba(22, 135, 255, 0.918);*/
+}
+
+#telekarta h1 > a[href="../ntv"] {
+    border-bottom: solid 2px rgb(131, 255, 100);
+    /*color: rgb(167, 255, 89);*/
+}
+
+
+
 
 h2 {
     font-size: 24px;
@@ -235,12 +294,14 @@ h3 {
     font-size: 18px;
     margin-left: 3px;
     color: white;
+    font-weight: 400;
 }
 
 
 .contacts {
     font-family: "Roboto condensed", "fontello";
     font-size: 22px;
+    font-weight: 400;
     line-height: 28px;
     margin-top: 2px;
     display: flex;
@@ -303,7 +364,6 @@ section.channel_packages {
 
 
 .channel_card {
-    /*display: inline-block;*/
     text-align: center;
     width: 260px;
     padding: 40px 30px;
@@ -341,9 +401,9 @@ ul {
 }
 
 ul li::before {
-    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: rgb(0, 175, 255); /* Change the color */
-    font-weight: 900; /* If you want it to be bold */
+    content: "\2022";
+    color: rgb(0, 175, 255);
+    font-weight: 900;
     display: inline-block; /* Needed to add space between the bullet and the text */
     width: 1em; /* Also needed for space (tweak if needed) */
     margin-left: -1em; /* Also needed for space (tweak if needed) */
@@ -413,12 +473,10 @@ section.tricolor_internet_tarifi {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
     justify-content: space-evenly;
     /*align-content: stretch;*/
     row-gap: 44px;
     /*gap: 20px;*/
-    
 }
 
 
@@ -725,12 +783,6 @@ main {
 
 
 
-
-
-
-
-
-
 #logo {
     float: left;
     padding: 15px;
@@ -743,7 +795,6 @@ main {
     height: 100px;
     width: 100px;
 }
-
 
 
 .shop:not(:first-of-type) {
@@ -766,9 +817,6 @@ main {
 .shop > p > b.telekarta_shop_name {
     color: rgb(230, 0, 124);
 }
-
-
-
 
 
 footer {
@@ -952,7 +1000,6 @@ footer span {
 
     }
 
-
     .channel_card,
     .exchange_card,
     .card,
@@ -962,8 +1009,6 @@ footer span {
         scroll-snap-align: start;
       
     }
-
-
 
     .channel_packages {
         height: 440px;
@@ -1014,26 +1059,24 @@ footer span {
         height: 366px;
     }
 
-
 }
-
 
 
 
 @media screen and (max-width: 520px) {
 
-    h2 {
-        margin-top: 50px;
-        margin-bottom: 30px;
+    nav {
+        height: 110px;
     }
 
-    header h1 > a {
+    h1 > a {
         font-size: 23px;
     }
 
     .official_dealer {
         font-size: 16px;
         line-height: 20px;
+        margin-top: 10px;
     }
 
     .official_dealer > span {
@@ -1054,7 +1097,8 @@ footer span {
 
     .figure_dash_header {
         font-size: 16px;
-        opacity: 0.8;
+        opacity: 1;
+        /*font-weight: 900;*/
     }
 
     .icon-mobile:before { 
@@ -1067,6 +1111,11 @@ footer span {
         vertical-align: 2px;
     }
 
+    h2 {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
     .vse_vklyucheno > div > ul {
         font-size: 15px;
     }
@@ -1077,8 +1126,6 @@ footer span {
     
 
 }
-
-
 
 
 
@@ -1114,16 +1161,8 @@ footer span {
         width: 160px;
     }
 
-
-
 }
 
-
-@media screen and (max-width: 390px) {
-
-    
-
-}
 
 
 @media screen and (max-width: 359px) {
@@ -1143,486 +1182,3 @@ footer span {
     }
 
 }
-
-
-
-
-
-
-
-/*
-
-p {
-    margin-top: 0;
-    margin-bottom: 10px;
-    line-height: 20px;
-}
-
-section.equipment {
-    margin-bottom: 10px;
-}
-
-.equipment section {
-    margin-bottom: -10px;
-}
-
-
-.tarif {
-    clear: left;
-    min-height: 80px;
-    margin-bottom: 10px;
-}
-
-.tarif img,
-.tarif picture {
-    width: inherit;
-}
-
-.tarif img,
-.tarif picture {
-    float: left;
-    width: 83px;
-    height: 80px;
-    padding-right: 20px;
-}
-
-.tarif > p {
-    padding-top: 7px;
-}
-
-
-#detailed_packages {
-    clear: left;
-    margin-top: 20px;
-}
-
-
-.img_firmware {
-    display: inline-block;
-    max-width: 250px;
-}
-
-.img_firmware img {
-    margin-top: 4px;
-}
-
-.img_firmware a {
-    display: inline-block;
-    padding: 10px 10px 10px 0;
-}
-
-
-#b522_c592 {
-    margin-bottom: 40px;
-}
-
-#b522_c592 a {
-    margin-top: 10px;
-    padding: 0;
-}
-
-
-.equipment_specs {
-    display: inline-block;
-    max-width: 380px;
-    vertical-align: top;
-}
-
-.equipment_specs ul {
-    margin: 0;
-    padding-left: 30px;
-}
-
-.equipment_specs p,
-.equipment_specs small {
-    padding-left: 15px;
-}
-
-
-.hidden_button {
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    height: 20px;
-    top: -40px;
-    padding: 10px 10px 10px 0;
-    color: rgb(0, 145, 240);
-}
-
-.hidden_button_2 {
-    top: -80px;
-}
-
-
-.hidden_button:after {
-    display: inline-block;
-    width: 24px;
-    height: 19px;
-    padding-top: 5px;
-    vertical-align: middle !important;
-    text-align: center;
-    content: '▼';
-    font-size: 12px;
-    color: rgba(0, 125, 240, 0.6);
-    transform: rotate(-90deg);
-    transition: 0.9s;
-}
-
-
-.equipment_button {
-    width: 200px;
-}
-
-.equipment_button_2 {
-    width: 125px;
-    top: -40px;
-}
-
-
-.exchange_equipment_button {
-    width: 267px;
-}
-
-
-.detailed_specs_button {
-    display: block;
-    position: relative;
-    z-index: 2;
-    height: 40px;
-    cursor: pointer;
-    opacity: 0;
-}
-
-.detailed_specs_button:hover + div {
-    text-decoration: underline;
-}
-
-.detailed_specs_button + div + div {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease-out;
-}
-
-.detailed_specs_button:checked + div + div {
-    max-height: 1999px;
-    transition: max-height 0.7s ease-in;
-}
-
-.detailed_specs_button:checked + div::after {
-    transform: rotate(0deg);
-    transition: 0.7s;
-}
-
-.detailed_specs {
-    position: relative;
-    top: -40px;
-}
-
-.hidden_button_2 + .detailed_specs {
-    top: -80px;
-    margin-bottom: -80px;
-}
-
-.detailed_specs ul {
-    margin-top: 6px;
-    padding-left: 15px;
-}
-
-
-#tricolor_internet {
-    clear: both;
-    margin-top: 40px;
-    margin-bottom: -10px;
-}
-
-#tricolor_internet > p + div {
-    margin-top: 60px;
-}
-
-
-#ntv_internet > p + div {
-    margin-top: 60px;
-}
-
-#tricolor_internet_tarelka {
-    margin-bottom: 40px;
-}
-
-#tricolor_internet_ol_ul {
-    margin-left: -29px;
-}
-
-#ntv_coverage_area {
-    margin-top: 20px;
-}
-
-
-.internet_tarif {
-    margin-top: -30px;
-}
-
-
-.internet_button {
-    width: 360px;
-}
-
-.internet_button + div {
-    padding-left: 0;
-}
-
-.manuals {
-    margin-top: -40px;
-}
-
-
-.ntv_section {
-    margin-bottom: 50px;
-}
-
-#ntv_internet_speed {
-    margin: 10px 0;
-}
-
-#ntv_internet_speed ul {
-    padding-left: 40px;
-}
-
-#ntv_additional_packages p:nth-child(2n) {
-    display: inline-block;
-    background: rgba(57, 168, 42, 0.11);
-}
-
-#ntv_internet_speed {
-    margin-left: 15px;
-}
-
-.addresses {
-    margin-bottom: 0;
-}
-
-.addresses div:first-of-type {
-    margin-top: 10px;
-}
-
-.addresses > picture > img {
-    width: inherit;
-}
-
-#main_telekarta a {
-    color:#0080C5; 
-}
-
-
-#telekarta_additional_header {
-    color: #EC0677;
-}
-
-#telekarta_additional p:nth-child(2n) {
-    display: inline-block;
-    background: rgba(0, 0, 0, 0.07);
-}
-
-
-#channels span {
-    font-weight: bold;
-}
-
-#channels h3 {
-    color: #39A82A;
-}
-
-
-.exchange > section > img {
-    display: block;
-    margin-bottom: 20px;
-}
-
-.exchange > section {
-    margin-bottom: 40px;
-}
-
-.exchange_equipment {
-    margin-bottom: 20px;
-}
-
-.price {
-    float: right;
-    margin-top: -6px;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.tricolor_price {
-    color: #F22;
-}
-
-.ntv_price,
-.telekarta_price {
-    color: #EC0677;
-}
-
-
-#tarif_ediniy_ultra_hd_module_delgado {
-    padding-left: 10px;
-}
-
-
-
-.addresses img,
-.addresses picture {
-    max-width: 100%;
-}
-
-.addresses > img:last-of-type {
-    margin-bottom: 0;
-}
-
-
-
-
-.noscript_map {
-    width: inherit;
-    max-width: 100%;
-}
-
-
-#market,
-#antenniy_mir2,
-#salon {
-    width: 100%;
-    max-height: 480px;
-}
-
-/* ~~~~~~~~~ Карты ~~~~~~~~~~~~~ */
-
-/*.ymaps-2-1-56-map{
-    pointer-events: none;
-}*/
-
-/*
-footer {
-    min-height: 60px;
-    width: 100%;
-    color: white;
-}
-
-footer a {
-    color: white;
-}
-
-
-.footer_div {
-    min-height: 60px;
-    line-height: 60px;
-}
-
-.year {
-    float: left;
-    padding-left: 20px;
-}
-
-.social_buttons a {
-    display: inline-block;
-    width: 40px;
-    height: 60px;
-    font-family: Fontello;
-    text-decoration: none; 
-}
-
-.bottom_nav {
-    display: inline-block;
-    height: 60px;
-    padding: 0 10px;
-}
-
-.made_in {
-    float: right;
-    padding-right: 20px;
-}
-*/
-
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/*
-@media screen and (max-width: 479px) {
-
-    .equipment_specs ul {
-        padding-left: 16px;
-    }
-
-}
-
-
-@media screen and (max-width: 639px) {
-
-    .main_content {
-        padding: 40px 0;
-    }
-
-    #market > ymaps,
-    #antenniy_mir2 > ymaps,
-    #salon > ymaps{
-        height: 70vh !important;
-    }
-
-    .year {
-        float: none;
-    }
-
-    .made_in {
-        float: none;
-    }
-}
-
-
-@media screen and (max-height: 679px) {
-    body {
-        background-position-y: 90px;
-    }
-
-    nav {
-        min-height: 60px;
-        display: inline-block;
-    }
-
-    .figure_dash {
-        vertical-align: 3px;
-        font-size: 18px;
-    }
-
-    nav h1 {
-        margin: 0;
-        font-size: 20px;
-        line-height: 30px;
-        font-weight: normal;
-        margin-right: -228px;
-    }
-
-    .official_dealer {
-        font-size: 16px;
-    }
-
-    .contacts {
-        font-size: 20px;
-        line-height: 30px;
-        float: right;
-        margin-right: 10px;
-    }
-
-}
-
-
-@media screen and (max-width: 959px) {
-    nav h1 {
-        margin: 0;
-    }
-
-
-    .contacts {
-        float: none;
-        margin-right: 0;
-    }
-}
-*/
